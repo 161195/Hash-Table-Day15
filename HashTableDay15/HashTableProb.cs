@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HashTable
 {
-    //Described globally as it is used in multiple methods and classes
+    //described globally as it is used in multiple methods and classes
     public struct KeyValue<k, v>                            //describing a structure named KeyValue with generic data types to hold any kind of data types.
     {                                                       //strctures are basically like classes, but they are value type. they can't be inherited.
         public k Key { get; set; }                          //key and value are the member elements of the class{structure} KeyValue
@@ -128,5 +128,4 @@ namespace HashTable
             }
         }
     }
-
 }
