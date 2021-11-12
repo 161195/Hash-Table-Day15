@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HashTable
 {
-    //described globally as it is used in multiple methods and classes
+    //Described globally as it is used in multiple methods and classes
     public struct KeyValue<k, v>                            //describing a structure named KeyValue with generic data types to hold any kind of data types.
     {                                                       //strctures are basically like classes, but they are value type. they can't be inherited.
         public k Key { get; set; }                          //key and value are the member elements of the class{structure} KeyValue
@@ -15,8 +15,6 @@ namespace HashTable
 
     public class MyMapNode<K, V>
     {
-        //Readonly indicates that the assignment to the fields is only the part of the declaration or in a constructor to the same class. 
-       
         private readonly int size;                          // size is the readonly local variabl declaration
         private readonly LinkedList<KeyValue<K, V>>[] items;     //items-- is an array of reference class linkedlist with data type as that of struct
                                                                  //basically the array items will have linkedlist in each of its index with data type of struct class
